@@ -11,8 +11,8 @@ pipeline{
                 rtMavenDeployer(
                     id: 'deployer',
                     serverId: 'jfroginstance',
-                    releaseRepo:'latest-libs-release-local',
-                    snapshotRepo:'latest-libs-snapshot-local'
+                    releaseRepo:'samplerepo',
+                    snapshotRepo:'samplerepo'
                 )
                 rtMavenRun(
                     pom:'pom.xml',
