@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage("build"){
             steps{
-                bat "echo steps"
+                bat "mvn clean"
             }
         }
         stage("publish to artifactory"){
